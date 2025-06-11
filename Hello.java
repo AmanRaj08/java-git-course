@@ -844,7 +844,26 @@ public class Hello
         // }
         // }
         // System.out.println(Arrays.toString(arr)); // This will print the sorted array using Bubble Sort
-        
+
+    //<------------------------GIT AND GITHUB------------------------------->
+
+        // Git is a version control system that allows you to track changes in your code and collaborate with others.
+        // You can create a repository, commit changes, push to remote repositories, and more.
+        // GitHub is a platform that hosts Git repositories and provides additional features like pull requests, issues, etc.
+        // For example, you can create a new repository on GitHub, clone it to your local machine, make changes, commit them, and push them back to GitHub.
+        // You can also use Git commands like git init, git add, git commit, git push, git pull, etc. to manage your code.
+
+    //<------------------------GIT COMMANDS------------------------------->
+
+        // git init - Initializes a new Git repository
+        // git add . - Adds all changes to the staging area
+        // git commit -m "Your commit message" - Commits the changes with a message
+        // git push origin main - Pushes the changes to the remote repository on the main branch
+        // git pull origin main - Pulls the latest changes from the remote repository on the main branch
+        // git status - Shows the current status of the repository
+        // git log - Shows the commit history of the repository
+        // git diff - Shows the differences between the working directory and the staging area
+        // git branch - Lists all branches in the repository
 
 
 
