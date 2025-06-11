@@ -864,6 +864,7 @@ public class Hello
         // git log - Shows the commit history of the repository
         // git diff - Shows the differences between the working directory and the staging area
         // git branch - Lists all branches in the repository
+        // git tag - Lists all tags in the repository
 
 
 
