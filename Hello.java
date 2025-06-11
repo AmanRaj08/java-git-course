@@ -865,6 +865,9 @@ public class Hello
         // git diff - Shows the differences between the working directory and the staging area
         // git branch - Lists all branches in the repository
         // git tag - Lists all tags in the repository
+        // git checkout <branch_name> - Switches to the specified branch
+        // git push origin v1.0 - Pushes a specific tag to the remote repository
+        // git clone <repository_url> - Clones a remote repository to your local machine
 
 
 
