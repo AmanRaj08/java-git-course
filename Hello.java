@@ -868,6 +868,30 @@ public class Hello
         // git checkout <branch_name> - Switches to the specified branch
         // git push origin v1.0 - Pushes a specific tag to the remote repository
         // git clone <repository_url> - Clones a remote repository to your local machine
+    
+     //<------------------------------JDBC------------------------------------>
+
+        // JDBC (Java Database Connectivity) is an API that allows Java applications to interact with databases.
+        // The 7 steps of JDBC are:
+        // 1. Import the JDBC package
+        // 2. Load the JDBC driver
+        // 3. Establish a connection to the database
+        // 4. Create a statement
+        // 5. Execute a query
+        // 6. Process the results
+        // 7. Close the connection
+
+        // Example code for JDBC:
+        // Class.forName("com.mysql.cj.jdbc.Driver");
+        // Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "user", "password");
+        // Statement stmt = conn.createStatement();
+        // ResultSet rs = stmt.executeQuery("SELECT * FROM mytable");
+        // while(rs.next()) {
+        //     System.out.println(rs.getString("column_name"));
+        // }
+        // rs.close();
+        // stmt.close();
+        // conn.close();
 
 
 
