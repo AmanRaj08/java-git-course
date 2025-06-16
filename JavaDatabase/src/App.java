@@ -8,10 +8,24 @@ public class App {
         String url = "jdbc:mysql://localhost:3306/javaDb";
         String user = "root";
         String password = "1234";
+        int id=13;
+        String name="JohnS";
         Connection connection = DriverManager.getConnection(url, user, password);
+        //String query = "insert into student values(11,'JohnD')";
+        //String query2 = "insert into student values("+id+",'"+name+"')";
+        String query2 = "insert into student values(?,?)";
+
 
         // Create a statement object to execute SQL queries
-        Statement statement = connection.createStatement();
+        //Statement statement = connection.createStatement();
+        PreparedStatement statement = connection.prepareStatement(query2);
+        statement.setInt(1, id);
+        statement.setString(2, name);
+
+        //insert a record
+        //int count = statement.executeUpdate(query);
+        int count = statement.executeUpdate();
+        System.out.println(count + " record(s) inserted.");
 
         // Execute a simple query
         ResultSet resultSet = statement.executeQuery("SELECT * FROM student");
