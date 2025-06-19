@@ -893,6 +893,23 @@ public class Hello
         // stmt.close();
         // conn.close();
 
+    //<------------------------------SERVLETS------------------------------------>
+
+        // Servlets are Java programs that run on a web server and handle HTTP requests and responses.
+        // They are used to create dynamic web applications.
+        // A servlet can be created by extending the HttpServlet class and overriding the doGet() or doPost() methods.
+        // Example code for a simple servlet:
+        // import java.io.*;
+        // import javax.servlet.*;
+        // import javax.servlet.http.*;
+
+        // public class HelloServlet extends HttpServlet {
+        //     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //         PrintWriter out = response.getWriter();
+        //         out.println("Hello, World!");
+        //     }
+        // }
+
 
 
     } 
