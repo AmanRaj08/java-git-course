@@ -910,6 +910,69 @@ public class Hello
         //     }
         // }
 
+    //<-------------------GET & POST METHODS IN SERVLETS----------------------------->
+
+        // The doGet() method is used to handle GET requests, while the doPost() method is used to handle POST requests.
+        // You can use the request object to get parameters from the request and the response object to send a response back to the client.
+        // Example code for handling GET and POST requests:
+        // protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //     String name = request.getParameter("name");
+        //     PrintWriter out = response.getWriter();
+        //     out.println("Hello, " + name + "!");
+        // }
+
+        // protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //     String name = request.getParameter("name");
+        //     PrintWriter out = response.getWriter();
+        //     out.println("Hello, " + name + "!");
+        // }
+
+    //<----------DYNAMIC WEB PAGE TO ADD 2 NUMBERS, HTML STRUCTURE AND WEB.XML FILE--------->
+
+        //HTML structure for a simple web page to add two numbers:
+        // <!DOCTYPE html>
+        // <html>
+        // <head>
+        //     <title>Addition</title>
+        // </head>
+        // <body>
+        //     <form action="add" method="post">
+        //         <input type="text" name="num1" placeholder="Enter first number">
+        //         <input type="text" name="num2" placeholder="Enter second number">
+        //         <input type="submit" value="Add">
+        //     </form>
+        // </body>
+        // </html>
+
+        //Web.xml file is used to configure servlets in a Java web application.
+        // web.xml file:
+        // <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+        //          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        //          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        //          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+        //          version="3.1">
+        //     <servlet>
+        //         <servlet-name>AdditionServlet</servlet-name>
+        //         <servlet-class>HelloServlet</servlet-class>
+        //     </servlet>
+        //     <servlet-mapping>
+        //         <servlet-name>AdditionServlet</servlet-name>
+        //         <url-pattern>/add</url-pattern>
+        //     </servlet-mapping>
+
+        //Java servlet to handle addition of two numbers:
+        // import java.io.*;
+        // import javax.servlet.*;
+        // import javax.servlet.http.*;
+        // public class AddServlet extends HttpServlet {
+        //     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //         int num1 = Integer.parseInt(request.getParameter("num1"));
+        //         int num2 = Integer.parseInt(request.getParameter("num2"));
+        //         int sum = num1 + num2;
+        //         PrintWriter out = response.getWriter();
+        //         out.println("Sum: " + sum);
+        //     }
+        //
 
 
     } 
