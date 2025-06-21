@@ -974,6 +974,134 @@ public class Hello
         //     }
         //
 
+    //<-----------------------REQUEST DISPATCHER----------------------------->
+
+        // RequestDispatcher is used to forward a request from one servlet to another resource (servlet, JSP, HTML file, etc.).
+        // It can also be used to include content from another resource in the response.
+        // Example code for using RequestDispatcher:
+        // RequestDispatcher dispatcher = request.getRequestDispatcher("result.jsp");
+        // dispatcher.forward(request, response); // Forwarding the request to result.jsp
+        // or
+        // dispatcher.include(request, response); // Including the content of result.jsp in the response
+
+    //<-----------------------SESSION MANAGEMENT----------------------------->
+
+        // Session management is used to maintain state across multiple requests from the same client.
+        // You can create a session, store attributes in it, and retrieve them later.
+        // Example code for session management:
+        // HttpSession session = request.getSession();
+        // session.setAttribute("username", "Aman");
+        // String username = (String) session.getAttribute("username");
+        // System.out.println("Username: " + username);
+        // session.invalidate(); // Invalidates the session
+
+        //Example:
+        //<!DOCTYPE html>
+        // <html>
+        // <body>
+        // 	Hello World!! We are Here to learn Servlet By Creating a simple page of addition<br>
+        // 	<form action="add" method="get">
+        // 		Enter username : <input type="text" name="num1"><br>
+        // 		Enter password : <input type="password" name="num2"><br>
+        // 		<input type="submit" value="Login">
+        // 	</form>
+        // </body>
+        // </html>
+        // package com.aman.learn;
+        
+        // import java.io.IOException;
+        // import java.io.PrintWriter;
+        
+        // import jakarta.servlet.RequestDispatcher;
+        // import jakarta.servlet.ServletException;
+        // import jakarta.servlet.http.Cookie;
+        // import jakarta.servlet.http.HttpServlet;
+        // import jakarta.servlet.http.HttpServletRequest;
+        // import jakarta.servlet.http.HttpServletResponse;
+        // import jakarta.servlet.http.HttpSession;
+        
+        // public class AddServlet extends HttpServlet{
+            
+        // //	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
+        // //		int i = Integer.parseInt(req.getParameter("num1"));
+        // //		int j = Integer.parseInt(req.getParameter("num2"));
+        // //		int k= i+j;
+        // //		PrintWriter out = res.getWriter();
+        // //		out.println("Result is " +k);
+        // //	}
+        //     public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+        // //		int i = Integer.parseInt(req.getParameter("num1"));
+        // //		int j = Integer.parseInt(req.getParameter("num2"));
+        // //		int k= i+j;
+        // //		req.setAttribute("k", k);
+        // //		RequestDispatcher rd=req.getRequestDispatcher("sq");
+        // //		rd.forward(req,res);
+        // //		PrintWriter out = res.getWriter();
+        // //		out.println("Result is " +k);
+        // //		HttpSession session = req.getSession();
+        // //		session.setAttribute("k", k);
+        //         String i = req.getParameter("num1");
+        //         String j = req.getParameter("num2");
+        //         Cookie cookieu = new Cookie("i",i);
+        //         Cookie cookiep = new Cookie("j",j);
+        //         res.addCookie(cookieu);
+        //         res.addCookie(cookiep);
+        // //		Cookie cookie = new Cookie("k",k + "");
+        // //		res.addCookie(cookie);
+                
+        //         res.sendRedirect("sq");
+                
+        //     }
+        
+        // }
+
+        // package com.aman.learn;
+        
+        // import java.io.IOException;
+        // import java.io.PrintWriter;
+        
+        // import jakarta.servlet.http.Cookie;
+        // import jakarta.servlet.http.HttpServlet;
+        // import jakarta.servlet.http.HttpServletRequest;
+        // import jakarta.servlet.http.HttpServletResponse;
+        // import jakarta.servlet.http.HttpSession;
+        
+        // public class SqServlet extends HttpServlet {
+            
+        //     public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException{
+            
+        // //		int k=0;
+        //         PrintWriter out=res.getWriter();
+        //         String u="";
+        //         String p="";
+        //         //HttpSession session = req.getSession();
+        //         //int k=(int)session.getAttribute("k");
+        //         //int k=Integer.parseInt(req.getParameter("k"));
+        //         Cookie cookie[]=req.getCookies();
+        // //		for(Cookie c : cookie) {
+        // //			if(c.getName().equals("i"))
+        // //				k=Integer.parseInt(c.getValue());
+        // //		}
+        // //		k=k*k;
+        // //		PrintWriter out=res.getWriter();
+        // //		out.println("Result is : " +k);
+        //         for(Cookie c : cookie) {
+        //             if(c.getName().equals("i"))
+        //                 u=c.getValue();
+        //             if(c.getName().equals("j"))
+        //                 p=c.getValue();
+        //         }
+        
+        //         if(u.equals("admin") && p.equals("admin")) {
+        //             out.println("LOGIN SUCCESSFUL.....");
+        //         }else {
+        //             out.println("LOGIN FAILED...TRY AGAIN");
+        //         }
+        //         //System.out.println("Sq called");
+        //     }
+        
+        // }
+        
 
     } 
 }
