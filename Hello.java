@@ -1101,6 +1101,56 @@ public class Hello
         //     }
         
         // }
+    
+    //<-----------------------ServletConfig & ServletContext----------------------------->
+
+        // ServletConfig is used to pass configuration parameters to a servlet, while ServletContext is used to share data between servlets in the same web application.
+        // Example code for using ServletConfig and ServletContext:
+        // public class MyServlet extends HttpServlet {
+        //     public void init(ServletConfig config) throws ServletException {
+        //         super.init(config);
+        //         String param = config.getInitParameter("myParam");
+        //         System.out.println("ServletConfig parameter: " + param);
+        //     }
+        
+        //     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //         ServletContext context = getServletContext();
+        //         String contextParam = context.getInitParameter("contextParam");
+        //         System.out.println("ServletContext parameter: " + contextParam);
+        //     }
+        //
+
+    //<-----------------------SERVLET ANNOTATIONS----------------------------->
+
+        // Servlet annotations are used to define servlets and their mappings without the need for a web.xml file.
+        // Example code for using servlet annotations:
+        // @WebServlet("/hello")
+        // public class HelloServlet extends HttpServlet {
+        //     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //         PrintWriter out = response.getWriter();
+        //         out.println("Hello, World!");
+        //     }
+        //
+
+    //<-----------------------JSP (JavaServer Pages)----------------------------->
+
+        // JSP is a technology that allows you to create dynamic web pages using Java.
+        // It allows you to embed Java code in HTML pages.
+        // Example code for a simple JSP page:
+        // <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+        // <!DOCTYPE html>
+        // <html>
+        // <head>
+        //     <title>Hello JSP</title>
+        // </head>
+        // <body>
+        //     <h1>Hello, World!</h1>
+        //     <% 
+        //         String name = "Aman";
+        //         out.println("Hello, " + name + "!"); 
+        //     %>
+        // </body>
+        // </html>
         
 
     } 
