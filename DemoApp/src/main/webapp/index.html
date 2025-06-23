@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+<title>Login Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 40px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .login-container input:focus {
+      border-color: #74ebd5;
+      outline: none;
+      box-shadow: 0 0 5px rgba(116, 235, 213, 0.5);
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 14px;
+      background: #74ebd5;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-container button:hover {
+      background: #67d8c3;
+    }
+
+    .login-container p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .login-container a {
+      color: #74ebd5;
+      text-decoration: none;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<html>
+<body>
+	 <div class="login-container">
+    <h2>Login</h2>
+	<form action="login.jsp" method="get">
+		<input type="text" placeholder="Username" name ="user" required />
+      <input type="password" placeholder="Password" name = "pass" required />
+		<button type="submit">Sign In</button>
+	</form>
+	 <p>Don't have an account? <a href="#">Register here</a></p>
+	 </div>
+</body>
+</html>
