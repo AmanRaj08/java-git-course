@@ -1151,6 +1151,31 @@ public class Hello
         //     %>
         // </body>
         // </html>
+
+    //<-------------JSP DIRECTIVES, SCRIPTLETS, EXPRESSIONS, AND DECLARATION--------------------->
+
+        // JSP directives are used to provide global information about an entire JSP page.
+        // Example of a JSP directive:
+        // <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+        // JSP scriptlets allow you to embed Java code in a JSP page.
+        // Example of a JSP scriptlet:
+        // <% 
+        //     String name = "Aman"; 
+        //     out.println("Hello, " + name + "!"); 
+        // %>
+    
+        // JSP expressions allow you to output data directly to the client.
+        // Example of a JSP expression:
+        // <%= "Hello, World!" %>
+
+        // JSP declarations allow you to declare variables and methods that can be used throughout the JSP page.
+        // Example of a JSP declaration:
+        // <%!
+        //     int add(int a, int b) {
+        //         return a + b;
+        //     }
+        // %>
         
 
     } 
